@@ -9,12 +9,183 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
+    <header class="header" data-test="header">
+      <nav class="header__navigation container">
+        <button class="header__button header__button--closed" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <img class="header__logo logo" src="/__spritemap#sprite-logo-view" width="142" height="42" alt="Логотип Lifetour.">
+        <ul class="header__navigation-list header__navigation-list--closed list">
+          <li class="header__navigation-item">
+            <a class="header__navigation-link link" href="#">Туры</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link link" href="#">Обучение</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link link" href="#">О нас</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link link" href="#">Отзывы</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link link" href="#">Фотографии</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="header__phone link" href="tel:+78000000000">8 800 000-00-00</a>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <section class="hero" data-test="hero">
+        <div class="hero__slider hero-slider">
+
+          <div class="hero-slider__slide">
+            <div class="hero-slider__container container">
+              <h3>Захватывающие вершины Кавказа</h3>
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+              <a class="hero-slider__button button link" href="#">Смотреть тур</a>
+              <div class="hero-slider__details">
+                <p class="hero-slider__duration"><span class="visually-hidden">Продолжительность тура: </span>6 дней/5 ночей</p>
+                <p class="hero-slider__level"><span class="visually-hidden">Уровень сложности маршрута: </span>Высокая сложность</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__pagination container"></div>
+        </div>
+      </section>
+
+      <section class="tours" data-test="tours">
+        <div class="tours__container container">
+          <h2 class="tours__title title">Ближайшие туры</h2>
+          <div class="tours__buttons button-slider">
+            <button class="button-slider button-slider--prev" type="button"><span class="visually-hidden">Назад.</span></button>
+            <button class="button-slider button-slider--next" type="button"><span class="visually-hidden">Вперед.</span></button>
+          </div>
+
+          <div class="tours__slider tours-slider">
+            <div class="tours-slider__slide">
+              <span class="tours-slider__place"><span class="visually-hidden">Место проведения тура: </span>Кавказ</span>
+              <div class="tours-slider__duration">
+                <span class="visually-hidden">Продолжительность тура: </span>
+                <span class="tours-slider__days">4 дня</span>
+                <span class="tours-slider__night">3 ночи</span>
+              </div>
+              <h3 class="tours-slider__title">Путешествие вокруг Эльбруса</h3>
+              <div class="tours-slider__details">
+                <p class="tours-slider__level">Сложность: <span class="visually-hidden">Высокая сложность</span></p>
+                <p class="tours-slider__date">Даты набора: <span><time datetime="2024-06-12">12.06</time>–<time datetime="2024-06-19">19.06</time></span></p>
+                <p class="tours-slider__group">Группа: <span>до 15 чел.</span></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="tours" data-test="tours">
+        <div class="tours__container container">
+          <h2 class="tours__title title">Ближайшие туры</h2>
+          <div class="tours__buttons button-slider">
+            <button class="button-slider button-slider--prev" type="button"><span class="visually-hidden">Назад.</span></button>
+            <button class="button-slider button-slider--next" type="button"><span class="visually-hidden">Вперед.</span></button>
+          </div>
+
+          <div class="tours__slider tours-slider">
+            <div class="tours-slider__slide">
+              <span class="tours-slider__place"><span class="visually-hidden">Место проведения тура: </span>Кавказ</span>
+              <div class="tours-slider__duration">
+                <span class="visually-hidden">Продолжительность тура: </span>
+                <span class="tours-slider__days">4 дня</span>
+                <span class="tours-slider__night">3 ночи</span>
+              </div>
+              <h3 class="tours-slider__title">Путешествие вокруг Эльбруса</h3>
+              <div class="tours-slider__details">
+                <p class="tours-slider__level">Сложность: <span class="visually-hidden">Высокая сложность</span></p>
+                <p class="tours-slider__date">Даты набора: <span><time datetime="2024-06-12">12.06</time>–<time datetime="2024-06-19">19.06</time></span></p>
+                <p class="tours-slider__group">Группа: <span>до 15 чел.</span></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="tours" data-test="tours">
+        <div class="tours__container container">
+          <h2 class="tours__title title">Ближайшие туры</h2>
+          <div class="tours__buttons button-slider">
+            <button class="button-slider button-slider--prev" type="button"><span class="visually-hidden">Назад.</span></button>
+            <button class="button-slider button-slider--next" type="button"><span class="visually-hidden">Вперед.</span></button>
+          </div>
+
+          <div class="tours__slider tours-slider">
+            <div class="tours-slider__slide">
+              <span class="tours-slider__place"><span class="visually-hidden">Место проведения тура: </span>Кавказ</span>
+              <div class="tours-slider__duration">
+                <span class="visually-hidden">Продолжительность тура: </span>
+                <span class="tours-slider__days">4 дня</span>
+                <span class="tours-slider__night">3 ночи</span>
+              </div>
+              <h3 class="tours-slider__title">Путешествие вокруг Эльбруса</h3>
+              <div class="tours-slider__details">
+                <p class="tours-slider__level">Сложность: <span class="visually-hidden">Высокая сложность</span></p>
+                <p class="tours-slider__date">Даты набора: <span><time datetime="2024-06-12">12.06</time>–<time datetime="2024-06-19">19.06</time></span></p>
+                <p class="tours-slider__group">Группа: <span>до 15 чел.</span></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="tours" data-test="tours">
+        <div class="tours__container container">
+          <h2 class="tours__title title">Ближайшие туры</h2>
+          <div class="tours__buttons button-slider">
+            <button class="button-slider button-slider--prev" type="button"><span class="visually-hidden">Назад.</span></button>
+            <button class="button-slider button-slider--next" type="button"><span class="visually-hidden">Вперед.</span></button>
+          </div>
+
+          <div class="tours__slider tours-slider">
+            <div class="tours-slider__slide">
+              <span class="tours-slider__place"><span class="visually-hidden">Место проведения тура: </span>Кавказ</span>
+              <div class="tours-slider__duration">
+                <span class="visually-hidden">Продолжительность тура: </span>
+                <span class="tours-slider__days">4 дня</span>
+                <span class="tours-slider__night">3 ночи</span>
+              </div>
+              <h3 class="tours-slider__title">Путешествие вокруг Эльбруса</h3>
+              <div class="tours-slider__details">
+                <p class="tours-slider__level">Сложность: <span class="visually-hidden">Высокая сложность</span></p>
+                <p class="tours-slider__date">Даты набора: <span><time datetime="2024-06-12">12.06</time>–<time datetime="2024-06-19">19.06</time></span></p>
+                <p class="tours-slider__group">Группа: <span>до 15 чел.</span></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+
+</html>
+
+    <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
+    примеры требуемых атрибутов data-test="*"
     <div data-test="header">header</div>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
@@ -24,8 +195,4 @@
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
-
-</html>
+    <div data-test="footer">footer</div> -->

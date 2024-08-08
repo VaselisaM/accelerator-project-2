@@ -1,0 +1,49 @@
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: $primary;
+  box-sizing: border-box;
+  color: $white;
+  border: none;
+  padding: 20px;
+
+  &:focus {
+    outline: none;
+    background-color: $white;
+    color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: $white;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+    color: $white;
+  }
+
+  @media (min-width: $tablet) {
+
+  }
+
+  @media (min-width: $desktop) {
+    &:hover {
+      background-color: $white;
+      color: $dark-blue;
+      border: 1px solid $dark-blue;
+      padding: 19px;
+    }
+  }
+}
+
+.button.active {
+  background-color: $dark-blue;
+  color: $white;
+}
+
+.button.disabled {
+  background-color: $disabled;
+  color: $white;
+}
