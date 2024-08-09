@@ -1,15 +1,101 @@
+.hero-slider {
+  position: relative;
+}
+
 .hero-slider__slide {
   color: $white;
   text-align: center;
   background-color: $black;
+  background-image: linear-gradient(143deg, rgba(15,20,41,0.33) 0%, rgba(15,20,41,0) 100%),
+  image-set(url("../../img/hero-1@2x.webp") type("image/webp") 2x,
+  url("../../img/hero-1@1x.webp") type("image/webp") 1x);
+  background-size: 857px auto;
+  min-height: 568px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet) {
+    min-height: 1034px;
+    background-size: 1560px auto;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 800px;
+    text-align: left;
+    background-size: 100vw;
+  }
+
+  @media (min-width: 1700px) {
+    background-position: bottom;
+  }
+}
+
+.hero-slider__pagination {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 0 20px;
+
+  @media (min-width: $desktop) {
+    right: calc((100vw - 1200px) / 2);
+    bottom: 92px;
+    left: auto;
+    transform: none;
+  }
+}
+
+.hero-slider__pagination-button {
+  border-radius: 100%;
+  border: 1px solid $white;
+  background: none;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+
+  }
+}
+
+.hero-slider__pagination-button.active {
+  background-color: $white;
+}
+
+.hero-slider__container {
+  padding-top: 145px;
+
+  @media (min-width: $tablet) {
+    padding-top: 342px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 200px;
+    padding-right: 500px;
+    padding-bottom: 80px;
+  }
 }
 
 .hero-slider__button {
   max-width: 180px;
   margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 134px;
+  }
 }
 
 .hero-slider__slide h3 {
+  margin: 0;
   font-weight: 800;
   font-size: 26px;
   line-height: 26px;
@@ -26,13 +112,58 @@
 }
 
 .hero-slider__slide p {
+  margin: 0;
+  padding: 15px 0 60px;
   font-size: 15px;
 
   @media (min-width: $tablet) {
     font-size: 17px;
     line-height: 24px;
+    padding: 13px 60px 37px;
   }
 
   @media (min-width: $desktop) {
+    padding: 23px 362px 37px 0;
+  }
+}
+
+.hero-slider__details {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+    gap: 10px;
+  }
+}
+
+.hero-slider__detail {
+  padding: 13px 19px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  display: flex;
+  gap: 8px;
+
+  &::before {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: center;
+    content: "";
+  }
+
+  &--duration {
+    &::before {
+      background-image: url("../../__spritemap#sprite-moon-view");
+    }
+  }
+
+  &--level {
+    &::before {
+      background-image: url("../../__spritemap#sprite-level-view");
+    }
   }
 }
