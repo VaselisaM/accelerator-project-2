@@ -126,7 +126,7 @@
 
   @media (min-width: $desktop) {
     display: flex;
-    gap: 0 30px;
+    gap: 0 18px;
     max-width: 800px;
     margin: 0 auto;
     padding-left: 31px;
@@ -148,7 +148,34 @@
     font-weight: 400;
     text-transform: none;
     letter-spacing: 0.1px;
-    padding: 14px 0 12px;
+    padding: 8px 0 6px;
+  }
+}
+
+.header__navigation-link {
+  width: min-content;
+
+  &:active {
+    color: $dark-blue;
+  }
+
+  &:disabled {
+    color: $disabled;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 6px;
+
+    &:focus {
+      outline: none;
+      padding: 5px;
+      border: 1px solid $white;
+    }
+
+    &:hover {
+      padding: 6px 6px 5px;
+      border-bottom: 1px solid $white;
+    }
   }
 }
 

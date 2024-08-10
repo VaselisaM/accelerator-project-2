@@ -3,6 +3,9 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 import {getTitleShadow} from './modules/title-shadow.js';
+import './modules/hero-slider.js';
+import './modules/tours-slider.js';
+// import {getHeroSlider} from './modules/hero-slider.js';
 
 const titles = document.querySelectorAll('.title');
 
@@ -28,3 +31,5 @@ navButton.addEventListener('click', () => {
     pageBody.classList.remove('page-body--fixed');
   }
 });
+
+// getHeroSlider();

@@ -1,7 +1,8 @@
-const heroSlides = [
+const HEROSLIDES = [
   {
     title: 'Захватывающие вершины Кавказа',
     description: 'В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.',
+    link: '#',
     duration: '6 дней/5 ночей',
     level: 'Высокая сложность',
     image: 'hero-1',
@@ -9,6 +10,7 @@ const heroSlides = [
   {
     title: 'Невероятная природа Камчатки',
     description: 'Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.',
+    link: '#',
     duration: '9 дней/10 ночей',
     level: 'Средняя сложность',
     image: 'hero-2',
@@ -16,13 +18,14 @@ const heroSlides = [
   {
     title: 'Магические пейзажи Алтайского Края',
     description: 'Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.',
+    link: '#',
     duration: '8 дней/7 ночей',
     level: 'Лёгкая сложность',
     image: 'hero-3',
   },
 ];
 
-const tourSlides = [
+const TOURSLIDES = [
   {
     title: 'Путешествие вокруг Эльбруса',
     place: 'Кавказ',
@@ -161,4 +164,4 @@ const levels = {
   5: 'Очень сложный маршрут',
 };
 
-export {heroSlides, tourSlides, trainerSlides, reviewSlides, advantageSlides, levels};
+export {HEROSLIDES, TOURSLIDES, trainerSlides, reviewSlides, advantageSlides, levels};
