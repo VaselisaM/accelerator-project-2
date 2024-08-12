@@ -23,7 +23,7 @@ const getTourSlide = (slide) => {
   const tourSlide = makeElement('li', 'tours-slider__slide');
   tourSlide.classList.add('swiper-slide');
   tourSlider.appendChild(tourSlide);
-  tourSlide.style.backgroundImage = `linear-gradient(143deg, rgba(15,20,41,0.33) 0%, rgba(15,20,41,0) 100%),
+  tourSlide.style.backgroundImage = `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 62%, rgba(0,0,0,0) 100%),
     image-set(url("../../img/${slide.image}@2x.webp") type("image/webp") 2x,
     url("../../img/${slide.image}@1x.webp") type("image/webp") 1x)`;
 
@@ -57,7 +57,7 @@ for (let i = 0; i < TOURSLIDES.length; i++) {
   tourSlider.appendChild(heroSlide);
 }
 
-const swiper = new Swiper('.swiper2', {
+const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -74,4 +74,4 @@ const swiper = new Swiper('.swiper2', {
   },
 });
 
-swiper.slideNext();
+swiper2.slideNext();

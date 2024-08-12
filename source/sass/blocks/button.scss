@@ -9,7 +9,7 @@
   padding: 20px;
   text-align: center;
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     background-color: $white;
     color: $dark-blue;

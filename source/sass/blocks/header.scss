@@ -166,7 +166,7 @@
   @media (min-width: $desktop) {
     padding: 6px;
 
-    &:focus {
+    &:focus-visible {
       outline: none;
       padding: 5px;
       border: 1px solid $white;
@@ -183,7 +183,7 @@
   font-weight: 600;
   margin-left: auto;
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     color: $black;
   }

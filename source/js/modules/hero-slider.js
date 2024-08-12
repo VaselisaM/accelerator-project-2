@@ -52,7 +52,7 @@ for (let i = 0; i < HEROSLIDES.length; i++) {
   heroSlider.appendChild(heroSlide);
 }
 
-const swiper = new Swiper('.swiper1', {
+const swiper1 = new Swiper('.swiper1', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -63,13 +63,9 @@ const swiper = new Swiper('.swiper1', {
     clickable: true,
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
 
-swiper.slideNext();
+swiper1.slideNext();
 
 
 // const heroSlideContainer = makeElement('div', 'hero-slider__container');
